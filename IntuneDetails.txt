@@ -1,4 +1,4 @@
-AppName:			OneDrive KFM Setup
+AppName:			  OneDrive KFM Setup
 Description:		Configures OneDrive KFM on a per user basis
 Publisher:			YourName
 Change logo:		AppLogo.png
@@ -10,11 +10,11 @@ Add return code:		999 - Failed
 Install Command:		powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -Windowstyle Hidden -File ".\Redirect-FoldersOneDrive_NoMove.ps1"
 Uninstall Command:	cmd /c
 
-Requirements:		64 Bit
-Minimum OS:			1607
+Requirements:		    64 Bit
+Minimum OS:			    1607
 
-Rule Type:			Registry
-Key Path:			HKEY_CURRENT_USER\SOFTWARE\Microsoft\OneDrive
-Value Name:			ODRedirectionCompleted
+Rule Type:			    Registry
+Key Path:			      HKEY_CURRENT_USER\SOFTWARE\Microsoft\OneDrive
+Value Name:			    ODRedirectionCompleted
 Detection Method:		Value Exists
-Assignments:		Hide All Toast Notifications
+Assignments:		    Hide All Toast Notifications
