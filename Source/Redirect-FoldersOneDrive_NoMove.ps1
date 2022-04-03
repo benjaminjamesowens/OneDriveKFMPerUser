@@ -481,7 +481,7 @@ If (Test-Path $OneDriveFolder) {
     Try {
         #LogWrite -logstring "Creating .tag file in $($env:ProgramData)\OneDriveFolderRedirection"
         #Set-Content -Path "$($env:ProgramData)\OneDriveFolderRedirection\OneDriveFolderRedirection.tag" -Value "Installed" -ErrorAction Stop
-        LogWrite -logstring "Creating NTT registry value 'ODRedirectionCompleted' in 'HKCU\SOFTWARE\Microsoft\OneDrive' for package detection"
+        LogWrite -logstring "Creating registry value 'ODRedirectionCompleted' in 'HKCU\SOFTWARE\Microsoft\OneDrive' for package detection"
         reg.exe add "HKCU\SOFTWARE\Microsoft\OneDrive" /v "ODRedirectionCompleted" /t REG_SZ /d $Timestamp /f
     }
     Catch {
